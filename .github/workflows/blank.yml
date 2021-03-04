@@ -17,5 +17,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Show files
-        run: ls -las
+      - name: Zipping
+        run: zip -r ZendalRpg-texturepack.zip *
+      - uses: actions/upload-artifact@v2
+        with:
+          name: ZendalRpg-texturepack.zip
+          path: ZendalRpg-texturepack.zip
