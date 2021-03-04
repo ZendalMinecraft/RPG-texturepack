@@ -1,0 +1,11 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "item/barrier/inventory_block"
+	},
+	"display": {
+		"gui": {
+		  "scale": [1.14, 1.14, 1.14]
+		}
+	}
+}
