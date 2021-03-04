@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Zipping
+name: Publish
 
 # Controls when the action will run. 
 on:
@@ -24,6 +24,6 @@ jobs:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: "latest"
           prerelease: false
-          title: "Development Build"
+          title: "Build at ${{ steps.date.outputs.date }}"
           files: |
             ZendalRpg-texturepack.zip
